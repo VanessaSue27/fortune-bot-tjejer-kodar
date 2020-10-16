@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortune Telling Mini-Bot</title>
+    <link rel="stylesheet" href="./style.css"> <!--This is the line linking to the CSS styling file-->
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet"> <!-- This is an imported custom font from Google Fonts, but any default font would also work-->
+</head>
+
+<body>
+    <header>
+        <h1>&#128302; Fortune Telling Mini-Bot &#128302;</h1> <!-- &#128302; is HTML decimal code for the crystal ball emoji. Find a good link about it here: https://www.w3schools.com/charsets/ref_emoji.asp -->
+    </header>
+
+    <div class="fortune-bot">
+        <div class="user-name" id="user-name"> <!-- This is the first div that comes up, including a input for entering your name-->
+            <h2>What's your name?</h2>
+            
+            <form>
+              <input type="text" id="input-name" placeholder="First name here..." required> <!-- this is the input where user enters their name-->
+            </form>
+            
+            <!-- User enters name and then clicks on this button which will call the userName() javaScript function, this function will store the name entered by the user and generate a sentence using that name and show the next question-->
+            <button onclick="userName()" id="name">What's in the numbers for you...~~</button>
+        </div>
+
+        <div class="user-number" id="user-number"><!-- div containing the second question, choose a number-->
+            <h2 id="name-greeting"></h2> <!-- This is the sentence generated after entering the name, explained on JavaScript file: "Your name is _______, sounds lucky..."-->
+
+            <h4>Enter your favorite number between 1-5</h4>
+
+            <form>
+                <input id="lucky-number" type="number" name="lucky-number" min="1" max="5" required  />
+            </form>
+
+            <button onclick="luckyNumber()" id="number">Tell me my Fortune!</button> <!--This is the button we click to get the final fortune sentence, it will call the luckyNumber() function in JavaScript-->
+
+        </div>
+
+        <p id="fortune-message" class="result-message"></p> <!--This p element will contain the sentence that is generated after entering the favorite number and will show a random fortune sentence-->
+
+    </div>
+
+    <script type="text/javascript" src="./script.js"></script><!-- this is the line linking to the JavaScript file-->
+</body>
+</html>
+
+<!-- Good material to read for this project: https://www.w3schools.com/html/html_forms.asp-->
+<!-- Good to know about HTML forms and input types-->
+<!-- Read about DOM events, material about onClick event: https://www.w3schools.com/jsref/event_onclick.asp-->
