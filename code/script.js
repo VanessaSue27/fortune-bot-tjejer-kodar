@@ -29,7 +29,7 @@ const luckyNumber = () => {
 
     const fortune = document.getElementById('fortune-message');
     if (userNumber === '1') {
-        fortune.innerHTML = '&#127775; Million Stars are shining upon your future &#129497;'
+        fortune.innerHTML = '&#127775; Thousand Stars are shining upon your future &#129497;'
     } else if (userNumber === '2') {
         fortune.innerHTML = '&#127775; Great day to make a bad decision you will regret! &#129497;'
     } else if (userNumber === '3') {
