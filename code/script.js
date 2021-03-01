@@ -31,7 +31,7 @@ const luckyNumber = () => {
     if (userNumber === '1') {
         fortune.innerHTML = '&#127775; Million Stars are shining upon your future &#129497;'
     } else if (userNumber === '2') {
-        fortune.innerHTML = '&#127775; Great day to eat pizza! &#129497;'
+        fortune.innerHTML = '&#127775; Great day to make a bad decision! &#129497;'
     } else if (userNumber === '3') {
         fortune.innerHTML = '&#127775; Keep trying, fortune will soon smile upon you &#129497;'
     } else if (userNumber === '4') {
