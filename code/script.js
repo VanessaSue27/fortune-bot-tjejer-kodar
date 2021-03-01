@@ -37,6 +37,6 @@ const luckyNumber = () => {
     } else if (userNumber === '4') {
         fortune.innerHTML = '&#127775; Better let it go, fortune not looking good here #sorrynotsorry... &#129497;'
     } else {
-        fortune.innerHTML = '&#127775; Sorry, lady luck is not on your side, damn lady... &#129497;'
+        fortune.innerHTML = '&#127775; Sorry, lady luck is not on your side &#129497;'
     }
 };
